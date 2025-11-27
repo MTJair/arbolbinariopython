@@ -26,9 +26,9 @@ def hacer_arbol(values):
         root = insert(root, i)
     return root
 
-values = [13, 7, 15, 3, 8, 14, 19, 18, 10]
+values = [13, 7, 15, 3, 8, 14, 19, 18, 10, 27, 17, 8, 52]
 root = hacer_arbol(values)
 
-print("recorrido numerods:")
+print("recorrido numeros:")
 inOrderTraversal(root)
 print()
