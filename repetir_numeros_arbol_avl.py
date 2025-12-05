@@ -3,7 +3,8 @@ class nodo_arbol:
         self.data = data
         self.left = None
         self.right = None
-
+        self.height = 1
+    
 def insert(node, data):
     if node is None:
         return nodo_arbol(data)
@@ -58,9 +59,9 @@ print("recorrido numeros:")
 inOrderTraversal(root)
 print()
 
-delete = int(input("Ingresa el número a borrar: "))
-root = delete(root, delete)
+to_delete = int(input("Ingresa el número a borrar: "))
+root = delete(root, to_delete)
 print("recorrido despues de borrar:")
 inOrderTraversal(root)
 print()
-#tare: agregar la rotacion del arbol según el balance de cada nodo hasta que quede balanceado#
+
